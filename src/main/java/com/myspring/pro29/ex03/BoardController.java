@@ -80,7 +80,7 @@ public class BoardController {
 		return resEntity;
 	}
 
-	// delete 방식으로 요청하므로 저달되는 articleNO에 대한 글을 삭제
+	// delete 방식으로 요청하므로 전달되는 articleNO에 대한 글을 삭제
 	@RequestMapping(value = "/{articleNO}", method = RequestMethod.DELETE)
 	public ResponseEntity<String> removeArticle(@PathVariable("articleNO") Integer articleNO) {
 		ResponseEntity<String> resEntity = null;
